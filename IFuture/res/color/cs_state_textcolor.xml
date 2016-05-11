@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="true" android:color="#a0d468"/> <!-- 录取 -->
+    <item android:state_activated="true" android:color="#398de3"/> <!-- 等待 -->
+    <item android:state_selected="true" android:color="#fb4b4b"/> <!-- 拒绝 -->
+    <item android:state_enabled="false" android:color="#606366"/>
+
+</selector>

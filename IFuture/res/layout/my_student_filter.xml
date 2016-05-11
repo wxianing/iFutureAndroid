@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        style="@style/divider_horizontal"
+        android:background="@color/filter_divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/head_bg_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/area_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:textSize="@dimen/sp15"
+                android:textColor="@color/white"
+                android:drawablePadding="@dimen/dp5"
+                android:drawableRight="@drawable/ic_filter_arrow_selector"
+                android:singleLine="true"
+                android:text="全部区域" />
+        </LinearLayout>
+
+        <View
+            style="@style/divider_vertical"
+            android:background="@color/filter_divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/teacher_search_rl"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp5"
+            android:background="@drawable/search_edit_bg"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/search_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10" />
+
+            <EditText
+                android:id="@+id/search_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/search_iv"
+                android:background="@color/transparent"
+                android:layout_centerVertical="true"
+                android:hint="请输入关键字"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:padding="@dimen/dp7"
+                android:textSize="@dimen/sp13" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/manager_filter_ll"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp12"
+                android:paddingBottom="@dimen/dp12">
+
+                <CheckBox
+                    android:id="@+id/teacher_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:textSize="@dimen/sp15"
+                    android:textColor="@color/white"
+                    android:drawablePadding="@dimen/dp5"
+                    android:drawableRight="@drawable/ic_filter_arrow_selector"
+                    android:singleLine="true"
+                    android:text="全部老师" />
+            </LinearLayout>
+
+            <View
+                style="@style/divider_vertical"
+                android:background="@color/filter_divider_color" />
+
+            <ImageButton
+                android:id="@+id/search_ib"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_search_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/manager_search_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:paddingTop="@dimen/dp5"
+        android:paddingBottom="@dimen/dp5"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/search_edit_bottom_bg"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/search_bottom_et"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/search_iv"
+                android:background="@color/transparent"
+                android:hint="请输入关键字"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:paddingTop="@dimen/dp5"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:textSize="@dimen/sp13" />
+
+            <ImageView
+                android:id="@+id/bottom_search_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search"
+                android:layout_marginRight="@dimen/dp10" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.meten.imanager.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/refresh_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            android:listSelector="@color/transparent"
+            ptr:ptrDrawable="@drawable/ic_loading"
+            ptr:ptrHeaderTextAppearance="?android:attr/textAppearanceSmall"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/filter_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#29000000"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:divider="@color/divider_bg_color"
+                android:dividerHeight="@dimen/divider">
+
+            </ListView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

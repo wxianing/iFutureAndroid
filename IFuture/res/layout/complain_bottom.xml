@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/complain_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/complain_bottom_bg_color"
+    android:padding="@dimen/dp8"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/add_complain_object_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_complain_object_selector"
+        android:layout_marginRight="@dimen/dp10"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/complain_et"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/complain_edit_bg"
+        android:textSize="@dimen/sp15"
+        android:padding="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp8"
+        android:maxLines="2"/>
+
+    <Button
+        android:id="@+id/complain_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/complain_bg_selector"
+        android:paddingTop="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10"
+        android:paddingRight="@dimen/dp20"
+        android:paddingLeft="@dimen/dp20"
+        android:text="发送"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp15"/>
+
+</LinearLayout>

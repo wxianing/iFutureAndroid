@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@color/head_bg_color">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="@dimen/head_title_size"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_toRightOf="@+id/back_iv"
+        android:layout_toLeftOf="@+id/right_iv"
+        android:textColor="@color/white"
+        android:text="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/back_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/title_tv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/title_tv"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/back_selector" />
+
+    <TextView
+        android:id="@+id/right_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/title_tv"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/title_tv"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="@dimen/sp18"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/right_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/title_tv"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/title_tv"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" 
+        android:src="@drawable/setting_selector"/>
+
+    <View
+        style="@style/divider_horizontal"
+        android:background="#2b75c1"
+        android:layout_below="@id/title_tv"/>
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#FFC93437</color>
+    <color name="blue">#FF375BF1</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#FF34A350</color>
+
+    <!-- base color -->
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="full_black">#000000</color>
+    <color name="black">#282828</color>
+    <color name="light_white">#f9f9f9</color>
+    
+    <!-- 设置 -->
+    <color name="setting_text_color">#555555</color>
+    <color name="setting_third_user_textcolor">#273545</color>
+
+    <!-- 登录 -->
+    <color name="login_divider_bg_color">#6b88b5</color>
+    <color name="login_other_divider">#84a7d3</color>
+    <color name="login_other_textcolor">#bac6d6</color>
+
+    <!--  -->
+    <color name="activity_bg_color">#f0f2f5</color>
+    <color name="head_bg_color">#398de3</color>
+    <color name="gray_textcolor">#7a7a7a</color>
+    <color name="light_gray_textcolor">#7c7c7c</color>
+    <color name="divider_bg_color">#dbdbdb</color>
+
+    <!-- 学生首页 -->
+    <color name="system_msg_bg_color">#8f81f1</color>
+    <color name="my_teacher_bg_color">#49cd7e</color>
+    <color name="my_score_bg_color">#3982e6</color>
+    <color name="my_datum_bg_color">#fbac4f</color>
+    <color name="my_plan_bg_color">#8dde74</color>
+    <color name="my_choose_school_bg_color">#fad75a</color>
+    <color name="my_writ_bg_color">#49c0e8</color>
+    <color name="my_complain_bg_color">#b383f0</color>
+
+    <!-- 个人信息 -->
+    <color name="username_textcolor">#63d2ff</color>
+    
+    <!-- 我的选校 -->
+    <color name="my_cs_item_title_textcolor">#b6b6b6</color>
+    <color name="university_textcolor">#398de3</color>
+    
+    <!-- 投诉底部背景颜色 -->
+    <color name="complain_bottom_bg_color">#398de3</color>
+
+    <!-- 我的学生顶部筛选分割线-->
+    <color name="filter_divider_color">#2b75c1</color>
+
+    <color name="praise_textcolor">#ff4c4c</color>
+    <color name="complain_textcolor">#4a92dc</color>
+
+    <color name="unhandled">#f45151</color>
+    
+    <color name="complain_details_expanding">#e8f3ff</color>
+</resources>

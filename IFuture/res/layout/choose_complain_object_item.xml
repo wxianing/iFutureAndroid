@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.meten.ifuture.view.CircularImage
+        android:id="@+id/head_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginBottom="@dimen/dp5"
+        android:src="@drawable/head_default" />
+
+    <ImageView
+        android:id="@+id/select_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_select_complain_object"
+        android:layout_alignBottom="@id/head_img"
+        android:layout_alignRight="@id/head_img"
+        android:layout_marginRight="-5dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/head_img"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/divider"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/name_tv"
+            style="@style/black_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="CMAD 程铭辉" />
+
+        <TextView
+            android:id="@+id/role_tv"
+            style="@style/light_gray_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="留学规划师" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/divider"
+        style="@style/divider_horizontal"
+        android:layout_below="@id/head_img" />
+
+</RelativeLayout>

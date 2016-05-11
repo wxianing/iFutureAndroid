@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 首页菜单文字 -->
+    <style name="main_menu_text">
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:drawablePadding">@dimen/dp10</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 首页菜单 -->
+    <style name="main_menu">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 个人信息item -->
+    <style name="user_info_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/dp20</item>
+        <item name="android:paddingRight">@dimen/dp15</item>
+        <item name="android:paddingTop">@dimen/dp13</item>
+        <item name="android:paddingBottom">@dimen/dp13</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- 个人信息item里右侧内容的Textview -->
+    <style name="user_info_item_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingLeft">@dimen/dp25</item>
+        <item name="android:drawableRight">@drawable/right_arrow_selector</item>
+    </style>
+
+    <!-- 分割线:横 -->
+    <style name="divider_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider</item>
+        <item name="android:background">@color/divider_bg_color</item>
+    </style>
+    <!-- 分割线:竖 -->
+    <style name="divider_vertical">
+        <item name="android:layout_width">@dimen/divider</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/divider_bg_color</item>
+    </style>
+
+    <!-- 浅灰色12sp字体 -->
+    <style name="light_gray_textview">
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:textColor">@color/light_gray_textcolor</item>
+    </style>
+    <!-- 黑色15sp字体 -->
+    <style name="black_textview">
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- 我的老师item -->
+    <style name="my_teacher_item_textview" parent="light_gray_textview">
+        <item name="android:paddingLeft">@dimen/dp20</item>
+        <item name="android:paddingTop">@dimen/dp10</item>
+        <item name="android:paddingBottom">@dimen/dp10</item>
+        <item name="android:drawablePadding">@dimen/dp10</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/my_teacher_item_selector</item>
+    </style>
+
+    <style name="my_student_item" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/dp15</item>
+        <item name="android:paddingTop">@dimen/dp10</item>
+        <item name="android:paddingBottom">@dimen/dp10</item>
+        <item name="android:paddingRight">@dimen/dp15</item>
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:gravity">center_vertical</item>
+
+    </style>
+
+    <!--我的学生底部左右item -->
+    <style name="my_student_bottom" parent="my_teacher_item_textview">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/dp10</item>
+    </style>
+    
+    <!-- 首页第三方登录 -->
+    <style name="third_login_textviewStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <!-- 选校的图标状态 -->
+    <style name="cs_state_img">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/cs_state_selector</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/sp10</item>
+        <item name="android:textColor">@color/cs_state_img_textcolor</item>
+    </style>
+    
+    <!-- 设置界面的item -->
+    <style name="setting_item">
+        <item name="android:paddingLeft">@dimen/dp15</item>
+        <item name="android:paddingRight">@dimen/dp15</item>
+        <item name="android:paddingBottom">@dimen/dp10</item>
+        <item name="android:paddingTop">@dimen/dp10</item>
+    </style>
+    <!-- 设置界面的绑定按钮 -->
+    <style name="setting_bind_btn">
+        <!--<item name="android:paddingLeft">@dimen/dp20</item>-->
+        <!--<item name="android:paddingRight">@dimen/dp20</item>-->
+        <item name="android:paddingBottom">@dimen/dp5</item>
+        <item name="android:paddingTop">@dimen/dp5</item>
+        <item name="android:background">@drawable/setting_bind_btn_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/bind</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="stu_info_item" >
+        <item name="android:drawablePadding">@dimen/dp10</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

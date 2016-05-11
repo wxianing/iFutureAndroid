@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp30"
+    android:paddingRight="@dimen/dp30"
+    android:paddingTop="@dimen/dp25" >
+
+    <EditText
+        android:id="@+id/data_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bind_et_bg"
+        android:inputType="phone"
+        android:padding="@dimen/dp10"
+        android:textSize="@dimen/sp15" />
+
+    <EditText
+        android:id="@+id/new_pwd_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bind_et_bg"
+        android:inputType="textPassword"
+        android:padding="@dimen/dp10"
+        android:textSize="@dimen/sp15" 
+        android:layout_marginTop="@dimen/dp5"
+        android:hint="请输入新密码"/>
+    <EditText
+        android:id="@+id/new_pwd_again_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bind_et_bg"
+        android:inputType="textPassword"
+        android:padding="@dimen/dp10"
+        android:textSize="@dimen/sp15" 
+        android:layout_marginTop="@dimen/dp5"
+        android:hint="请再次输入新密码"/>
+    
+    <TextView
+        android:id="@+id/warn_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp5"
+        android:drawableLeft="@drawable/ic_warn"
+        android:drawablePadding="@dimen/dp5"
+        android:text="输入手机号码有误"
+        android:textSize="@dimen/sp12"
+        android:textColor="#3d74be" />
+
+    <Button
+        android:id="@+id/commit_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bind_btn_selector"
+        android:text="获取验证码"
+        android:padding="@dimen/dp10"
+         android:layout_marginTop="@dimen/dp30"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp15" />
+
+</LinearLayout>

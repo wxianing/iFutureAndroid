@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp15" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10" >
+
+        <TextView
+            android:id="@+id/_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="@string/university"
+            android:textColor="@color/my_cs_item_title_textcolor"
+            android:textSize="@dimen/sp13" />
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/_name"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_toRightOf="@id/_name"
+            android:singleLine="true"
+            android:text="哈弗大学"
+            android:textColor="@color/university_textcolor"
+            android:textSize="@dimen/sp15" />
+
+        <TextView
+            android:id="@+id/_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/_name"
+            android:text="@string/project"
+            android:textColor="@color/my_cs_item_title_textcolor"
+            android:textSize="@dimen/sp13" />
+
+        <TextView
+            android:id="@+id/project_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/_project"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_toRightOf="@id/_project"
+            android:singleLine="true"
+            android:text="项目"
+            android:textColor="@color/gray_textcolor"
+            android:textSize="@dimen/sp15" />
+
+        <TextView
+            android:id="@+id/_webAddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/_project"
+            android:text="@string/webAddr"
+            android:textColor="@color/my_cs_item_title_textcolor"
+            android:textSize="@dimen/sp13" />
+
+        <TextView
+            android:id="@+id/webAddr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/_webAddr"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_toRightOf="@id/_webAddr"
+            android:singleLine="true"
+            android:text="www.baidu.com"
+            android:layout_toLeftOf="@+id/refuse_btn"
+            android:textColor="@color/gray_textcolor"
+            android:textSize="@dimen/sp15" />
+
+        <Button
+            android:id="@+id/accept_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/name_tv"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@drawable/hand_btn_selector"
+            android:text="接受"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp12" />
+
+        <Button
+            android:id="@+id/refuse_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp5"
+            android:background="@drawable/hand_btn_selector"
+            android:text="拒绝"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp12" />
+
+        <Button
+            android:id="@+id/accepted_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/hand_btn_selector"
+            android:enabled="false"
+            android:text="已接受"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp12"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/state_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/apply_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/apply_iv"
+                android:layout_alignTop="@+id/apply_iv"
+                android:layout_toRightOf="@+id/apply_iv"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp4"
+                    android:background="#ebebeb" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/apply_iv"
+                style="@style/cs_state_img"
+                android:duplicateParentState="true"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/apply_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/apply_iv"
+                android:duplicateParentState="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp5"
+                android:textColor="@color/cs_state_textcolor"
+                android:text="申请中" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wirt_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/wirt_iv"
+                android:layout_alignTop="@+id/wirt_iv"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp4"
+                    android:background="#ebebeb" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/wirt_iv"
+                style="@style/cs_state_img"
+                android:duplicateParentState="true"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/wirt_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wirt_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp5"
+                android:duplicateParentState="true"
+                android:textColor="@color/cs_state_textcolor"
+                android:text="文书完成" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/web_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/web_iv"
+                android:layout_alignTop="@+id/web_iv"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp4"
+                    android:background="#ebebeb" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/web_iv"
+                style="@style/cs_state_img"
+                android:duplicateParentState="true"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/web_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/web_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp5"
+                android:textColor="@color/cs_state_textcolor"
+                android:duplicateParentState="true"
+                android:text="网申提交" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hear_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/hear_iv"
+                android:layout_alignTop="@+id/hear_iv"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp4"
+                    android:background="#ebebeb" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hear_iv"
+                style="@style/cs_state_img"
+                android:duplicateParentState="true"
+                android:text="4"  />
+
+            <TextView
+                android:id="@+id/hear_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hear_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp5"
+                android:duplicateParentState="true"
+                android:textColor="@color/cs_state_textcolor"
+                android:text="审理中" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/result_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/result_iv"
+                android:layout_alignTop="@+id/result_iv"
+                android:layout_toLeftOf="@+id/result_iv"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp4"
+                    android:background="#ebebeb" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/result_iv"
+                style="@style/cs_state_img"
+                android:duplicateParentState="true"
+                android:text="5"  />
+
+            <TextView
+                android:id="@+id/result_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/result_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp5"
+                android:textColor="@color/cs_state_textcolor"
+                android:duplicateParentState="true"
+                android:text="结果" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/divider_horizontal"
+        android:layout_marginTop="@dimen/dp10" />
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:overScrollMode="never"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:background="@drawable/user_info_top_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.meten.ifuture.view.CircularImage
+                android:id="@+id/head_img"
+                android:layout_width="@dimen/user_info_headImgSize"
+                android:layout_height="@dimen/user_info_headImgSize"
+                android:layout_marginTop="@dimen/dp25"
+                android:src="@drawable/head_default" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="Cmad 程铭辉"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp20" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp4"
+                    android:text="@string/userName"
+                    android:textColor="@color/username_textcolor"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/username_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp4"
+                    android:text="17097226930"
+                    android:textColor="@color/username_textcolor"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/center_ll"
+            style="@style/user_info_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/belong_center"
+                android:textColor="@color/gray_textcolor" />
+
+            <TextView
+                android:id="@+id/center_tv"
+                style="@style/user_info_item_text"
+                android:drawableRight="@null"/>
+        </LinearLayout>
+
+        <View style="@style/divider_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/mobile_ll"
+            style="@style/user_info_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile"
+                android:textColor="@color/gray_textcolor" />
+
+            <TextView
+                android:id="@+id/mobile_tv"
+                style="@style/user_info_item_text"
+                android:text="17097226930" />
+        </LinearLayout>
+
+        <View style="@style/divider_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/parent_mobile_ll"
+            style="@style/user_info_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/parent_mobile"
+                android:textColor="@color/gray_textcolor" />
+
+            <TextView
+                android:id="@+id/parent_mobile_tv"
+                style="@style/user_info_item_text"
+                android:text="15123396930" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/parent_bottom_divider"
+            style="@style/divider_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/qq_ll"
+            style="@style/user_info_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qq_str"
+                android:textColor="@color/gray_textcolor" />
+
+            <TextView
+                android:id="@+id/qq_tv"
+                style="@style/user_info_item_text"
+                android:text="991079532" />
+        </LinearLayout>
+
+        <View style="@style/divider_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/wechat_ll"
+            style="@style/user_info_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wechat_str"
+                android:textColor="@color/gray_textcolor" />
+
+            <TextView
+                android:id="@+id/wechat_tv"
+                style="@style/user_info_item_text"
+                android:text="331917692" />
+        </LinearLayout>
+
+        <View style="@style/divider_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/email_ll"
+            style="@style/user_info_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_str"
+                android:textColor="@color/gray_textcolor" />
+
+            <TextView
+                android:id="@+id/email_tv"
+                style="@style/user_info_item_text"
+                android:text="feng_33191@126.com" />
+        </LinearLayout>
+
+        <View style="@style/divider_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/addr_ll"
+            style="@style/user_info_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addr"
+                android:textColor="@color/gray_textcolor" />
+
+            <TextView
+                android:id="@+id/addr_tv"
+                style="@style/user_info_item_text"
+                android:text="深圳市福田景田路" />
+        </LinearLayout>
+
+        <View style="@style/divider_horizontal" />
+    </LinearLayout>
+
+</ScrollView>

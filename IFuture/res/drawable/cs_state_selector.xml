@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_cs_state_underway" android:state_enabled="true"></item>
+    <item android:drawable="@drawable/ic_cs_state_wait" android:state_activated="true"></item>
+    <item android:drawable="@drawable/ic_cs_state_refuse" android:state_selected="true"></item>
+    <item android:drawable="@drawable/ic_cs_state_normal"></item>
+
+</selector>

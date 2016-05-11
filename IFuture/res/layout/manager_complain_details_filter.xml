@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/handle_rg"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ededed"
+    android:gravity="center"
+    android:padding="@dimen/dp10">
+
+    <RadioButton
+        android:id="@+id/handle_all_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:background="@drawable/handle_all_selector"
+        android:text="全部"
+        android:textColor="@color/handle_textcolor"
+        android:paddingLeft="@dimen/sp15"
+        android:paddingRight="@dimen/sp15"
+        android:paddingTop="@dimen/dp5"
+        android:paddingBottom="@dimen/dp5"
+        android:gravity="center"
+        android:textSize="@dimen/sp12"
+        android:checked="true" />
+
+    <RadioButton
+        android:id="@+id/handled_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:background="@drawable/handled_selector"
+        android:text="已处理"
+        android:textColor="@color/handle_textcolor"
+        android:paddingLeft="@dimen/sp15"
+        android:paddingRight="@dimen/sp15"
+        android:paddingTop="@dimen/dp5"
+        android:paddingBottom="@dimen/dp5"
+        android:textSize="@dimen/sp12"
+        android:gravity="center" />
+
+    <RadioButton
+        android:id="@+id/unhandled_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:background="@drawable/unhandled_selector"
+        android:text="未处理"
+        android:gravity="center"
+        android:textColor="@color/handle_textcolor"
+        android:paddingLeft="@dimen/sp15"
+        android:paddingRight="@dimen/sp15"
+        android:paddingTop="@dimen/dp5"
+        android:paddingBottom="@dimen/dp5"
+        android:textSize="@dimen/sp12" />
+
+</RadioGroup>

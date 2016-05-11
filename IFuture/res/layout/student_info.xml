@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stu_info_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.meten.ifuture.view.CircularImage
+            android:id="@+id/head_img"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/stu_default_headimg" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/dp10">
+
+            <TextView
+                android:id="@+id/stu_teacher_tv"
+                style="@style/stu_info_item"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_stu_teacher_selector"
+                android:text="老师"/>
+
+            <TextView
+                android:id="@+id/stu_plan_tv"
+                style="@style/stu_info_item"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_stu_plan_selector"
+                android:text="规划"/>
+
+            <TextView
+                android:id="@+id/stu_choose_school_tv"
+                style="@style/stu_info_item"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_stu_choose_school_selector"
+                android:text="选校"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp10">
+
+            <TextView
+                android:id="@+id/stu_datum_tv"
+                style="@style/stu_info_item"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_stu_datum_selector"
+                android:text="材料"/>
+
+            <TextView
+                android:id="@+id/stu_writ_tv"
+                style="@style/stu_info_item"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_stu_writ_selector"
+                android:text="文书"/>
+
+            <TextView
+                android:id="@+id/stu_score_tv"
+                style="@style/stu_info_item"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_stu_score_selector"
+                android:text="成绩"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stu_info_cancel_bg_selector"
+            android:textSize="@dimen/sp15"
+            android:padding="@dimen/dp15"
+            android:textColor="@color/white"
+            android:text="关闭" />
+    </LinearLayout>
+
+</LinearLayout>

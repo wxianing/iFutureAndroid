@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        style="@style/divider_horizontal"
+        android:background="@color/filter_divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/head_bg_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/area_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:textSize="@dimen/sp15"
+                android:textColor="@color/white"
+                android:drawablePadding="@dimen/dp10"
+                android:padding="@dimen/dp10"
+                android:drawableRight="@drawable/ic_filter_arrow_selector"
+                android:text="全部区域" />
+        </LinearLayout>
+
+        <View
+            style="@style/divider_vertical"
+            android:background="@color/filter_divider_color" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/teacher_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:textSize="@dimen/sp15"
+                android:textColor="@color/white"
+                android:drawablePadding="@dimen/dp10"
+                android:padding="@dimen/dp10"
+                android:drawableRight="@drawable/ic_filter_arrow_selector"
+                android:text="所有老师" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#29000000">
+
+        <ListView
+            android:id="@+id/filter_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:divider="@color/divider_bg_color"
+            android:dividerHeight="@dimen/divider"
+            android:visibility="gone">
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_rg"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="@dimen/dp10">
+
+    <RadioButton
+        android:id="@+id/system_msg_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:background="@drawable/handle_all_selector"
+        android:text="系统消息"
+        android:textColor="@color/handle_textcolor"
+        android:paddingLeft="@dimen/sp15"
+        android:paddingRight="@dimen/sp15"
+        android:paddingTop="@dimen/dp5"
+        android:paddingBottom="@dimen/dp5"
+        android:gravity="center"
+        android:textSize="@dimen/sp12"
+        android:checked="true" />
+
+
+
+    <RadioButton
+        android:id="@+id/user_msg_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:background="@drawable/unhandled_selector"
+        android:text="用户消息"
+        android:gravity="center"
+        android:textColor="@color/handle_textcolor"
+        android:paddingLeft="@dimen/sp15"
+        android:paddingRight="@dimen/sp15"
+        android:paddingTop="@dimen/dp5"
+        android:paddingBottom="@dimen/dp5"
+        android:textSize="@dimen/sp12" />
+
+</RadioGroup>

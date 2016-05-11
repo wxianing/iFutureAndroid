@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/resource_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp10"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="@dimen/dp10" />
+
+    <LinearLayout
+        android:id="@+id/file_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/filename_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#e1e1e1"
+            android:gravity="center"
+            android:textSize="@dimen/sp13"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/file_format_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5"
+            android:gravity="center"
+            android:background="#cacaca"
+            android:textSize="@dimen/sp10"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <com.meten.ifuture.view.wave.WaveView
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10">
+
+    </com.meten.ifuture.view.wave.WaveView>
+
+    <ImageView
+        android:id="@+id/delete_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete_selector"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+
+</RelativeLayout>

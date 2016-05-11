@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.meten.ifuture.view.ScrollAdView
+        android:id="@+id/adview"
+        android:layout_width="match_parent"
+        android:layout_height="140dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp5"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/_dp25"
+        android:orientation="horizontal" >
+
+        <com.meten.ifuture.view.CircularImage
+            android:id="@+id/head_img"
+            android:layout_width="@dimen/headImgSize"
+            android:layout_height="@dimen/headImgSize"
+            android:src="@drawable/head_default" />
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp35"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_weight="7"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp4"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/my_student_ll"
+                style="@style/main_menu"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/dp4"
+                android:layout_weight="5"
+                android:background="@drawable/my_student_bg_selector" >
+
+                <TextView
+                    android:id="@+id/my_student_tv"
+                    style="@style/main_menu_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dp5"
+                    android:drawableTop="@drawable/ic_my_student_selector"
+                    android:textColor="@color/my_student_textcolor"
+                    android:text="@string/my_student" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/study_abroad_info_ll"
+                style="@style/main_menu"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/dp4"
+                android:layout_marginTop="@dimen/dp4"
+                android:layout_weight="3"
+                android:background="@drawable/study_abroad_info_bg_selector" >
+
+                <TextView
+                    style="@style/main_menu_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_study_abroad_info_selector"
+                    android:textColor="@color/study_abroad_info_textcolor"
+                    android:text="@string/study_abroad_info" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp4"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/past_student_ll"
+                style="@style/main_menu"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/dp4"
+                android:layout_weight="3"
+                android:background="@drawable/past_student_bg_selector" >
+
+                <TextView
+                    android:id="@+id/past_student_tv"
+                    style="@style/main_menu_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_past_student_selector"
+                    android:textColor="@color/past_student_textcolor"
+                    android:text="@string/past_student" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/school_rank_ll"
+                style="@style/main_menu"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/dp4"
+                android:layout_marginTop="@dimen/dp4"
+                android:layout_weight="5"
+                android:background="@drawable/school_rank_bg_selector" >
+
+                <TextView
+                    style="@style/main_menu_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dp5"
+                    android:drawableTop="@drawable/ic_school_rank_selector"
+                    android:textColor="@color/school_rank_textcolor"
+                    android:text="@string/school_rank" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/system_msg_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginBottom="@dimen/dp8"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp4"
+        android:background="@drawable/system_msg_bg_selector"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/main_menu_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_msg_selector"
+            android:textColor="@color/system_msg_textcolor"
+            android:text="@string/system_message" />
+
+        <TextView
+            android:id="@+id/msg_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp8"
+            android:background="@drawable/msg_count_bg"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp10" />
+    </LinearLayout>
+
+</LinearLayout>

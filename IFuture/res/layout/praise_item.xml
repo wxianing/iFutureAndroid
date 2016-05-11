@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content">
+
+        <com.meten.ifuture.view.CircularImage
+            android:id="@+id/head_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp5"
+            android:src="@drawable/head_default" />
+
+        <TextView
+            android:id="@+id/name_tv"
+            style="@style/black_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/head_img"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_alignTop="@id/head_img"
+            android:layout_marginTop="@dimen/dp5"
+            android:singleLine="true"
+            android:text="CMAD 程铭辉" />
+
+        <TextView
+            android:id="@+id/role_tv"
+            style="@style/light_gray_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/name_tv"
+            android:layout_below="@id/name_tv"
+            android:text="留学规划师" />
+
+        <View
+            style="@style/divider_horizontal"
+            android:layout_below="@id/head_img" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/praise_count_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_praise_checked"
+            android:drawablePadding="@dimen/dp5"
+            android:textColor="@color/praise_textcolor"
+            android:textSize="@dimen/sp15"
+            android:text="9999" />
+        <View
+            style="@style/divider_horizontal"
+            android:layout_below="@id/head_img" />
+    </LinearLayout>
+
+</LinearLayout>

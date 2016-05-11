@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="@dimen/dp10" >
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/add_iv"
+        android:text="中英文成绩单"
+        android:textColor="@color/gray_textcolor"
+        android:paddingLeft="@dimen/dp15"
+        android:textSize="@dimen/sp14" />
+
+    <ImageView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp10"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/add_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_toLeftOf="@id/indicator"
+        android:src="@drawable/add_datum_selector" />
+
+    <View
+        style="@style/divider_horizontal"
+        android:layout_below="@id/add_iv"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginTop="@dimen/dp10" />
+
+</RelativeLayout>
